@@ -10,11 +10,14 @@ function alternatingSums(a: number[]): number[] {
   const team2: number[] = [];
 
   for (let i = 0; i < a.length; i++) {
-    console.log(a[i])
+    if (i % 2 === 0) {
+      team1.push(a[i])
+    } else {
+      team2.push(a[i])
+    }
   }
-  console.log("team1", team1);
-  console.log("team2", team2);
-
+  const weightsArr = [team1.reduce((acc, val) => acc + val, 0), team2.reduce((acc, val) => acc + val, 0)]
+  return weightsArr;
 }
 
 console.log(alternatingSums([50, 60, 60, 45, 70]))
