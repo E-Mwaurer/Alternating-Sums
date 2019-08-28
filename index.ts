@@ -6,18 +6,16 @@ const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `<h1>Alternating Sums</h1>`;
 
 function alternatingSums(a: number[]): number[] {
-  const team1: number[] = [];
-  const team2: number[] = [];
-
+  let team1Sum = 0;
+  let team2Sum = 0;
   for (let i = 0; i < a.length; i++) {
     if (i % 2 === 0) {
-      team1.push(a[i])
+      team1Sum += a[i];
     } else {
-      team2.push(a[i])
+      team2Sum += a[i];
     }
   }
-  const weightsArr = [team1.reduce((acc, val) => acc + val, 0), team2.reduce((acc, val) => acc + val, 0)]
-  return weightsArr;
+  return [team1Sum, team2Sum];
 }
 
 console.log(alternatingSums([50, 60, 60, 45, 70]))
