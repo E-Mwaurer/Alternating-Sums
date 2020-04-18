@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FE-Mwaurer%2FAlternating-Sums.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FE-Mwaurer%2FAlternating-Sums?ref=badge_shield)
+
 ### Copyrights © 2019 Thinkster.io
 ##### Algorithm Challenge Available At [CodeFights](https://codefights.com/arcade/intro/level-4/cC5QuL9fqvZjXJsW9)
 ---
@@ -22,3 +24,7 @@ alternatingSums(a) = [180, 105].
 45 ≤ a[i] ≤ 100.
 
 **[output] array.integer**
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FE-Mwaurer%2FAlternating-Sums.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FE-Mwaurer%2FAlternating-Sums?ref=badge_large)
